@@ -1,4 +1,4 @@
-#include "pch.h"
+#include "pch.h" //Comment out if not using VS with precompiled headers
 #include <iostream>
 #include <vector>
 
