@@ -147,7 +147,7 @@ int main()
 {
 	int target;
 	std::vector<int> denominations{ input(target) };
-
+	sort(denominations);
 	std::vector<int> returnvector{ makeChange(target, denominations) };
 	if (returnvector[0] == 0)
 	{
