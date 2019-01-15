@@ -87,7 +87,7 @@ std::vector<int> input(int &target)
 	std::cout << "Enter the number of allowed coins: ";
 	int arraylength;
 	bool lengthvalid{ false };
-	while (lengthvalid == false)
+	while (!lengthvalid)
 	{
 		std::cin >> arraylength;
 		if (std::cin.fail() || arraylength < 1)
