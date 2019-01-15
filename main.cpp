@@ -108,7 +108,7 @@ std::vector<int> input(int &target)
 	{
 		std::cout << "Enter coin #" << index + 1 << ": ";
 		bool elementvalid{ false };
-		while (elementvalid == false)
+		while (!elementvalid)
 		{
 			std::cin >> denominations[index];
 			if (std::cin.fail() || denominations[index] < 1)
@@ -125,7 +125,7 @@ std::vector<int> input(int &target)
 
 	std::cout << "Enter the ammount desired ammount of money: ";
 	bool targetvalid{ false };
-	while (targetvalid == false)
+	while (!targetvalid)
 	{
 
 		std::cin >> target;
